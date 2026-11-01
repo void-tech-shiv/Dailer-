@@ -56,7 +56,7 @@ private fun PrismApp() {
     var contacts by remember { mutableStateOf<List<Person>>(emptyList()) }
     var permission by remember {
         mutableStateOf(
-            android.content.ContextCompat.checkSelfPermission(
+            androidx.core.content.ContextCompat.checkSelfPermission(
                 context, Manifest.permission.READ_CONTACTS
             ) == PackageManager.PERMISSION_GRANTED
         )
