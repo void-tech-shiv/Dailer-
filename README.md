@@ -23,3 +23,7 @@ The APK is a debug build. Test SIM selection, lock-screen calls, Bluetooth, spea
 - Jetpack Compose + Material 3
 - Android Gradle Plugin 8.9.1
 - Android SDK 36
+
+
+## Build fix
+Java and Kotlin compilation are both configured for JVM 17 to match the GitHub Actions JDK.
